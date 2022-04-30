@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Count</th>
+            <th>Profit</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ range $.Site.Data.progress }}
+        <tr>
+            <td>{{ .category }}</td>
+            <td>{{ .totalCount }}</td>
+            <td>{{ math.Round .profit }}</td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>
