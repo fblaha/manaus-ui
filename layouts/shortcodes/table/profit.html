@@ -3,14 +3,18 @@
         <tr>
             <th>Category</th>
             <th>Count</th>
+            <th>Back</th>
+            <th>Lay</th>
             <th>Profit</th>
         </tr>
     </thead>
     <tbody>
-        {{ range $.Site.Data.progress }}
+        {{ range getJSON "http://localhost:7777/fc-progress/3d" }}
         <tr>
             <td>{{ .category }}</td>
             <td>{{ .totalCount }}</td>
+            <td>{{ .backCount }}</td>
+            <td>{{ .layCount }}</td>
             <td>{{ math.Round .profit }}</td>
         </tr>
         {{ end }}
