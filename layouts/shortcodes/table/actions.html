@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>Market</th>
+            <th>Time</th>
+            <th>Version</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ range getJSON "http://manaus:8080/actions" }}
+        <tr>
+            <td>{{ .marketId }}</td>
+            <td>{{ .time }}</td>
+            <td>{{ .version }}</td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>
