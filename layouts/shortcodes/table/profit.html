@@ -9,7 +9,7 @@
         </tr>
     </thead>
     <tbody>
-        {{ range getJSON "http://localhost:7777/fc-progress/3d" }}
+        {{ range getJSON "http://manaus:8080/fc-progress/30d" }}
         <tr>
             <td>{{ .category }}</td>
             <td>{{ .totalCount }}</td>
