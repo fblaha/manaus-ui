@@ -1,7 +1,6 @@
 ---
-title: "Profit"
+title: "Profit 7d"
 date: 2022-04-15T20:38:44+02:00
 draft: false
 ---
-***profit***
-{{< table/profit >}}
+{{< table/profit profit 7d>}}

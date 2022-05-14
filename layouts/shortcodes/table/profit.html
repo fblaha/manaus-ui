@@ -9,7 +9,7 @@
         </tr>
     </thead>
     <tbody>
-        {{ range getJSON "http://manaus:8080/profit/30d" "?ts=" now.UnixNano }}
+        {{ range getJSON $.Site.Params.mns_url (.Get 0) "/" (.Get 1) }}
         <tr>
             <td>{{ .category }}</td>
             <td>{{ .totalCount }}</td>

@@ -54,6 +54,7 @@ title = "Manaus"
   # can be overridden in a page's front-matter
   # TocTitle = "Table of Contents" # default
 
+  mns_url = 'http://manaus:8080/'
 
 [params.twitter]
   # set Twitter handles for Twitter cards
@@ -84,13 +85,21 @@ title = "Manaus"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "profit"
-        name = "Profit"
-        url = "/profit"
+        identifier = "profit_7d"
+        name = "Profit 7d"
+        url = "/profit_7d"
       [[languages.en.menu.main]]
-        identifier = "progress"
-        name = "Progress"
-        url = "/progress"
+        identifier = "profit_30d"
+        name = "Profit 30d"
+        url = "/profit_30d"
+      [[languages.en.menu.main]]
+        identifier = "progress_7d"
+        name = "Progress 7d"
+        url = "/progress_7d"
+      [[languages.en.menu.main]]
+        identifier = "progress_30d"
+        name = "Progress 30d"
+        url = "/progress_30d"
       [[languages.en.menu.main]]
         identifier = "Bets"
         name = "Bets"
@@ -99,23 +108,3 @@ title = "Manaus"
         identifier = "Actions"
         name = "Actions"
         url = "/actions"
-
-[caches]
-  [caches.assets]
-    dir = ':resourceDir/_gen'
-    maxAge = -1
-  [caches.getcsv]
-    dir = ':cacheDir/:project'
-    maxAge = -1
-  [caches.getjson]
-    dir = ':cacheDir/:project'
-    maxAge = 30
-  [caches.getresource]
-    dir = ':cacheDir/:project'
-    maxAge = -1
-  [caches.images]
-    dir = ':resourceDir/_gen'
-    maxAge = -1
-  [caches.modules]
-    dir = ':cacheDir/modules'
-    maxAge = -1

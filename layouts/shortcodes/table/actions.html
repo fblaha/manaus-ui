@@ -7,7 +7,7 @@
         </tr>
     </thead>
     <tbody>
-        {{ range getJSON "http://manaus:8080/actions" "?ts=" now.UnixNano }}
+        {{ range getJSON $.Site.Params.mns_url "actions" }}
         <tr>
             <td>{{ .marketId }}</td>
             <td>{{ .time }}</td>
