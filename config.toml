@@ -109,7 +109,7 @@ title = "Manaus"
     maxAge = -1
   [caches.getjson]
     dir = ':cacheDir/:project'
-    maxAge = 30s
+    maxAge = 30
   [caches.getresource]
     dir = ':cacheDir/:project'
     maxAge = -1
