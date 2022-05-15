@@ -14,7 +14,7 @@ title = "Manaus"
   themeColor = "blue"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 8
+  showMenuItems = 100
 
   # show selector to switch language
   showLanguageSelector = false
@@ -85,6 +85,10 @@ title = "Manaus"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
+        identifier = "profit_1d"
+        name = "Profit 1d"
+        url = "/profit_1d"
+      [[languages.en.menu.main]]
         identifier = "profit_7d"
         name = "Profit 7d"
         url = "/profit_7d"
@@ -93,6 +97,14 @@ title = "Manaus"
         name = "Profit 30d"
         url = "/profit_30d"
       [[languages.en.menu.main]]
+        identifier = "profit_90d"
+        name = "Profit 90d"
+        url = "/profit_90d"
+      [[languages.en.menu.main]]
+        identifier = "progress_1d"
+        name = "Progress 1d"
+        url = "/progress_1d"
+      [[languages.en.menu.main]]
         identifier = "progress_7d"
         name = "Progress 7d"
         url = "/progress_7d"
@@ -100,6 +112,10 @@ title = "Manaus"
         identifier = "progress_30d"
         name = "Progress 30d"
         url = "/progress_30d"
+      [[languages.en.menu.main]]
+        identifier = "progress_90d"
+        name = "Progress 90d"
+        url = "/progress_90d"
       [[languages.en.menu.main]]
         identifier = "Bets"
         name = "Bets"
