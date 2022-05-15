@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Placed</th>
+            <th>Matched</th>
+            <th>Settled</th>
+            <th>Profit</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ range getJSON $.Site.Params.mns_url "bets" }}
+        <tr>
+            <td>{{ .selectionName }}</td>
+            <td>{{ .placed }}</td>
+            <td>{{ .matched }}</td>
+            <td>{{ .settled }}</td>
+            <td>{{ .profitAndLoss }}</td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>

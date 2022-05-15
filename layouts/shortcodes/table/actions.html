@@ -4,6 +4,8 @@
             <th>Market</th>
             <th>Time</th>
             <th>Version</th>
+            <th>Price</th>
+            <th>Side</th>
         </tr>
     </thead>
     <tbody>
@@ -12,6 +14,8 @@
             <td>{{ .marketId }}</td>
             <td>{{ .time }}</td>
             <td>{{ .version }}</td>
+            <td>{{ .price.price }}</td>
+            <td>{{ .price.side }}</td>
         </tr>
         {{ end }}
     </tbody>
