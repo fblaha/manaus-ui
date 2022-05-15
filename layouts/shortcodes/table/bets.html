@@ -9,7 +9,8 @@
         </tr>
     </thead>
     <tbody>
-        {{ range getJSON $.Site.Params.mns_url "bets" }}
+        {{ $bets := getJSON $.Site.Params.mns_url "bets"}}
+        {{ range sort $bets "settled" "desc" }}
         <tr>
             <td>{{ .selectionName }}</td>
             <td>{{ .placed }}</td>
