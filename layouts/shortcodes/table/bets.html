@@ -5,6 +5,8 @@
             <th>Placed</th>
             <th>Matched</th>
             <th>Settled</th>
+            <th>Price</th>
+            <th>Side</th>
             <th>Profit</th>
         </tr>
     </thead>
@@ -16,6 +18,8 @@
             <td>{{ .placed }}</td>
             <td>{{ .matched }}</td>
             <td>{{ .settled }}</td>
+            <td>{{ .price.price }}</td>
+            <td>{{ .price.side }}</td>
             <td>{{ .profitAndLoss }}</td>
         </tr>
         {{ end }}
