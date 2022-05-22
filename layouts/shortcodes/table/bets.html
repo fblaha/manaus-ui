@@ -15,9 +15,9 @@
         {{ range sort $bets "settled" "desc" }}
         <tr>
             <td>{{ .selectionName }}</td>
-            <td>{{ .placed }}</td>
-            <td>{{ .matched }}</td>
-            <td>{{ .settled }}</td>
+            <td>{{ (time .placed).Local.Format "2006-01-02 15:04:05" }}</td>
+            <td>{{ (time .matched).Local.Format "2006-01-02 15:04:05" }}</td>
+            <td>{{ (time .settled).Local.Format "2006-01-02 15:04:05" }}</td>
             <td>{{ .price.price }}</td>
             <td>{{ .price.side }}</td>
             <td>{{ .profitAndLoss }}</td>
